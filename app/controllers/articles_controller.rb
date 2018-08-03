@@ -9,7 +9,7 @@ class ArticlesController < ApplicationController
     @article = Article.new  
   end
   
-  def create
+  def create    
     @article = Article.new(article_params)
     if @article.save     
       flash[:notice] = "Article created"
